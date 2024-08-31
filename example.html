@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar offcanvas</title>
+    <style>
+        .container {
+            background-color: white;
+        }
+
+        #darkbar {
+            height: 27px;
+            padding: 14px;
+            padding-top: 16px;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            margin: -10px -10px 17px -10px;
+        }
+
+        #lightbar {
+            height: 27px;
+            font-size: 20px;
+            background-color: #fafaff;
+            padding: 13px;
+            padding-top: 18px;
+            margin: 0 -10px 22px -10px;
+        }
+
+        #responsive {
+            height: 26px;
+            padding: 14px;
+            padding-top: 16px;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            margin: 10px -10px 17px -10px;
+        }
+
+        #searchbutton {
+            text-align: center;
+            font-size: 15px;
+            width: 52px;
+            height: 20px;
+            padding: 10px;
+            background-color: black;
+            color: green;
+            border-radius: 5px;
+            border: 1px solid green;
+            top: 145px;
+            right: 10px;
+            position: absolute;
+        }
+
+        #searchbutton:hover {
+            background-color: green;
+            color: white;
+            cursor: pointer;
+        }
+
+        #searchbar {
+            font-size: 15px;
+            width: 175px;
+            height: 20px;
+            padding: 10px;
+            padding-left: 13px;
+            background-color: white;
+            color: #888888;
+            border-radius: 5px;
+            top: 145px;
+            right: 93px;
+            position: absolute;
+        }
+
+        #searchbar:hover {
+            cursor: text;
+        }
+
+        #home, #link, #dropdown {
+            position: absolute;
+            top: 145px;
+            margin: 10px;
+            padding: 13px 0 7px 0;
+            
+        }
+        #home {
+            color: #ffffff;
+            right: 460px;
+            font-weight: bold;
+        }
+        #link {
+            color: #aaaaaa;
+            right: 415px;
+        }
+
+        #dropdown {
+            color: #aaaaaa;
+            right: 320px;
+        }
+
+        #link:hover,
+        #dropdown:hover {
+            color: #eeeeee;
+        }
+        #main{
+            background-color: #fafaff;
+            margin: 50px 190px 0 190px;
+            padding: 70px 280px 70px 280px;
+            font-weight: normal;
+        }
+        #main h1{
+            font-size: 48px;
+            font-weight: normal;
+            margin-bottom: -10px;
+        }
+        #main h2{
+            font-size: 20px;
+            font-weight: normal;
+        }
+        #main h3{
+            font-size: 15px;
+            font-weight: normal;
+        }
+        #button{
+            width: 280px;
+            height: 30px;
+            background-color: #306ef3;
+            color: white;
+            border-radius: 7px;
+            padding: 10px 0 0 10px;
+        }
+        #button:hover{
+            background-color: #1f469a;
+        }
+        a{
+            color: #306ef3;
+        }
+        a:hover{
+            color: #1f469a;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="darkbar">Dark offcanvas navbar</div>
+        <div id="lightbar">Light offcanvas navbar</div>
+        <div id="responsive">
+            Responsive offcanvas navbar
+        </div>
+        <div id="menu">
+            <p id="home">Home</p>
+            <p id="link">Link</p>
+            <p id="dropdown">Dropdown</p>
+            <p id="searchbar">Search</p>
+            <p id="searchbutton">Search</p>
+        </div>
+        <div id="main">
+            <h1>Navbar with offcanvas examples</h1>
+            <h2>This example shows how responsive offcanvas menus work within the navbar. For positioning of navbars,
+                checkout the <a href="">top</a> and <a href="">fixed top</a> examples.</h2>
+            <h3>From the top down, you'll see a dark navbar, light navbar and a responsive navbar—each with offcanvases
+                built in. Resize your browser window to the large breakpoint to see the toggle for the offcanvas.</h3>
+            <h3 id="button">Learn more about offcanvas navbars</h3>
+        </div>
+    </div>
+</body>
+
+</html>
